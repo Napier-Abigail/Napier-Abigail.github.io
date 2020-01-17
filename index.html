@@ -5,29 +5,37 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+		function goto(url){
+			window.location=url;
+		}
+	</script>
 </head>
 <body>
 	<header>
-		<h1>CIT 261 Portfolio</h1>
+		<div id="landing-content">
+			<h1>CIT 261 Portfolio</h1>
+			<button onclick="goto('#topics')">TOPICS</button>
+		</div>
 	</header>
-	<main>
-		<ul>
-			<li><a href="#">JavaScript</a></li>
-			<li><a href="#">JavaScript Objects</a></li>
-			<li><a href="#">JSON</a></li>
-			<li><a href="#">AJAX</a></li>
-			<li><a href="#">Local Storage</a></li>
-			<li><a href="#">DOM</a></li>
-			<li><a href="#">CSS Class Properties with JavaScript</a></li>
-			<li><a href="#">CSS3 Transitions and Animations with JavaScript</a></li>
-			<li><a href="#">JavaScript Events</a></li>
-			<li><a href="#">HTML5 Tags</a></li>
-			<li><a href="#">CSS3 Transitions</a></li>
-			<li><a href="#">CSS3 Transforms</a></li>
-			<li><a href="#">CSS3 Animations</a></li>
-		</ul>
+	<main id="topics">
+			<a href="#">JavaScript</a>
+			<a href="#">JavaScript Objects</a>
+			<a href="#">JSON</a>
+			<a href="#">AJAX</a>
+			<a href="#">Local Storage</a>
+			<a href="#">DOM</a>
+			<a href="#">CSS Class Properties w/ JS</a>
+			<a href="#">CSS3 Transitions &amp; Animations w/ JS</a>
+			<a href="#">JavaScript Events</a>
+			<a href="#">HTML5 Tags</a>
+			<a href="#">CSS3 Transitions</a>
+			<a href="#">CSS3 Transforms</a>
+			<a href="#">CSS3 Animations</a>
 
 	</main>
-
+	<footer>
+		<p>&copy; 2020 | Abigail Napier | BYU-Idaho</p>
+	</footer>
 </body>
 </html>
