@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface%7CRaleway&display=swap');
+
+section{
+	background-color: #f5f6f2;
+	text-align: center;
+	padding: 1em;
+}
+body{
+	font-family: "Raleway", sans-serif;
+	color: #211e23;
+	margin:0;
+	padding:0;
+	
+}
+
+h1, h2, h3, h4 {
+	font-family: "Abril Fatface", serif;
+	font-weight: normal;
+	text-align: center;
+}
+h1{
+	margin:0;
+	color: white;
+}
+h2, a{
+	color:#a384bb;
+}
+
+input[type="button"]{
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	background-color: #a384bb;
+	border-style: none;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	margin: 5px;
+}
+input[type="button"]:hover{
+	background-color: #6a597c;
+	cursor: pointer;
+}
+
+header{
+	padding:3em;
+	margin:0;
+	background-color: #a384bb;
+	text-align: center;
+}
+
+.note{
+	color: #376a61;
+	padding: 2em;
+}
+
+button{
+	margin:5px;
+	background-color: white;
+	color:#a384bb;
+	font-family: "Raleway", sans-serif;
+	padding:5px;
+	border-style: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+button:hover{
+	cursor: pointer;
+	background-color: #6a597c;
+	color:white;
+}
+

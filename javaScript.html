@@ -4,16 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JavaScript Fluency</title>
+	<style>
+		textarea{
+			width: 80%;
+			height: 300px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="fluencyStyle.css">
+	<script src="javaScript.js"></script>
 </head>
 <body>
 	<header>
 		<h1>JavaScript Fluency</h1>
+		<button onclick="location.href = 'index.html';">Back To Topics</button>
 	</header>
-	<section>
-		<h2>Loops, Conditional Statements, Functions, Variables, &amp; Parameters</h2>
-	</section>
-	<section>
-		<h2>Arrays, &amp; Associative Arrays</h2>
-	</section>
+	<main>
+		<section>
+			<h2>Loops, Conditional Statements, Functions, Variables, Parameters &amp; Arrays</h2>
+			<div id="wordCounter">
+				<h3>Word Counter</h3>
+				<form>
+					Paste the text you would like to search below: <br>
+					<textarea id="searchText"></textarea><br>
+					Please enter the word you would like to count below:<br>
+					<input type="text" id="searchWord"><br>
+					<input type="button" value="Count" onclick="wordCount()">
+				</form>
+				<div id="countOutput"></div>
+			</div>
+		</section>
+		<p class="note">Note: Associative Arrays was included in this topic. JavaScript does not support "Associative Arrays" by name. When an array with key value pairs is needed, JavaScript Objects can be used instead. For this reason I have chosed to include my fluency in Associative Arrays on my <a href="javaScriptObjects.html">JavaScript Objects Page</a>.</p>
+	</main>
 </body>
 </html>

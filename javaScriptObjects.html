@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Objects Fluency</title>
+	<script src="javaScriptObjects.js"></script>
+	<link rel="stylesheet" type="text/css" href="fluencyStyle.css">
+</head>
+<body>
+	<header>
+		<h1>JavaScript Objects Fluency</h1>
+		<button onclick="location.href = 'index.html';">Back To Topics</button>
+	</header>
+	<section>
+		<h2>Associative Arrays</h2>
+		<div id="familyTree">
+			<h3>Family Tree</h3>
+			Your name: <input type="text" id="you">
+			<div class=relativeEntry>
+				Relative: Name: <input type="text" id="rName"> 
+				Relation: <select>
+					<option value="mom">Mom</option>
+					<option value="dad">Dad</option>
+					<option value="spouse">Spouse</option>
+					<option value="brother">Brother</option>
+					<option value="sister">Sister</option>
+					<option value="daugher">Daughter</option>
+					<option value="son">Son</option>
+				</select>
+			</div>
+		</div>
+		<input type="button" value="Make Tree" onclick="makeTree()">
+		<input type="button" value="Add Another Relative" onclick="addNewRelativeEntry()">
+		<div id="treeOutput"></div>
+	</section>
+</body>
+</html>	
+
+		
