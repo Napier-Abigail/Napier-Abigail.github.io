@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Objects Fluency</title>
+	<script src="AJAX.js"></script>
+	<link rel="stylesheet" type="text/css" href="fluencyStyle.css">
+	<style>
+		#factOutput{
+			color: #a384bb;
+			font-size: 20px;
+			width:50%;
+			margin:auto;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>AJAX</h1>
+		<button onclick="location.href = 'index.html';">Back To Topics</button>
+	</header>
+	<section>
+		<h2>Calling a 3rd Party API</h2>
+		<h3>Get a random fact about a number:</h3>
+		Enter a number: <input type="text" id="usrNum">
+		Select your fact type: 
+		<select id="type">
+			<option value="trivia">Trivia</option>
+			<option value="math">Math</option>
+			<option value="year">Year</option>
+		</select>
+		<input type="button" onclick="getFact()" value="Get Fact">
+		<div id="factOutput"></div>
+		</section>
+</body>
+</html>
