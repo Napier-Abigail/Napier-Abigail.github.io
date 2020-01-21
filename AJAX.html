@@ -7,7 +7,7 @@
 	<script src="AJAX.js"></script>
 	<link rel="stylesheet" type="text/css" href="fluencyStyle.css">
 	<style>
-		#factOutput{
+		#triviaOutput{
 			color: #a384bb;
 			font-size: 20px;
 			width:50%;
@@ -22,16 +22,17 @@
 	</header>
 	<section>
 		<h2>Calling a 3rd Party API</h2>
-		<h3>Get a random fact about a number:</h3>
-		Enter a number: <input type="text" id="usrNum">
-		Select your fact type: 
-		<select id="type">
-			<option value="trivia">Trivia</option>
-			<option value="math">Math</option>
-			<option value="year">Year</option>
+		<h3>Super Heros</h3>
+		Select a hero: 
+		<select id="hero">
+			<option value="spiderman">Spider-Man</option>
+			<option value="capamerica">Captain America</option>
+			<option value="ironman">Iron Man</option>
+			<option value="thor">Thor</option>
+			<option value="hulk">Hulk</option>
 		</select>
-		<input type="button" onclick="getFact()" value="Get Fact">
-		<div id="factOutput"></div>
+		<input type="button" onclick="getInfo()" value="Learn More">
+		<div id="output"></div>
 		</section>
 </body>
 </html>
