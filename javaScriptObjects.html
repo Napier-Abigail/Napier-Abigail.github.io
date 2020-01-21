@@ -6,6 +6,29 @@
 	<title>JavaScript Objects Fluency</title>
 	<script src="javaScriptObjects.js"></script>
 	<link rel="stylesheet" type="text/css" href="fluencyStyle.css">
+	<style>
+		.familyMember{
+			background-color: white;
+  			border-radius: 50%;
+  			height:50px;
+  			width: 50px;
+		}
+		.relationLevel{
+			display: inline-flex;
+			justify-content: center;
+		}
+		#familyTreeOut{
+			display: grid;
+			grid-template-columns: 1fr;
+			text-align: center;
+			margin:auto;
+			justify-content: center;
+		}
+		#treeOutput{
+			text-align: center;
+			justify-content: center;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -25,7 +48,7 @@
 					<option value="spouse">Spouse</option>
 					<option value="brother">Brother</option>
 					<option value="sister">Sister</option>
-					<option value="daugher">Daughter</option>
+					<option value="daughter">Daughter</option>
 					<option value="son">Son</option>
 				</select>
 			</div>
