@@ -13,7 +13,7 @@ function getFact(){
 	};
 	let usrNum = document.getElementById("usrNum").value;
 	let type = document.getElementById("type").options[document.getElementById("type").selectedIndex].value;
-	let url = "http://numbersapi.com/"+usrNum+"/"+type+"?json";
+	let url = "https://numbersapi.com/"+usrNum+"/"+type+"?json";
 	xhttp.open("GET", url, true);
 	xhttp.send();
 }
