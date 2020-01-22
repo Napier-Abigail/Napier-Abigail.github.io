@@ -3,8 +3,8 @@ function getInfo(){
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			let responseJSON = JSON.parse(this.responseText);
-			let name = responseJSON.data.results.name;
-			let about = responseJSON.data.results.description;
+			let name = responseJSON.data.results[0].name;
+			let about = responseJSON.data.results[0].description;
 			let outputArea = document.getElementById("output");
 			outputArea.innerHTML="";
 			let htmlName = document.createElement("H4");
