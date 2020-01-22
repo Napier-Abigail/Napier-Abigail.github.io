@@ -32,7 +32,7 @@ function getInfo(){
 		url+="1009664?apikey="+apiKey;
 		break;
 		case "hulk":
-		url+="1009664?apikey="+apiKey;
+		url+="1009351?apikey="+apiKey;
 		break;
 	} 
 	xhttp.open("GET", url, true);
