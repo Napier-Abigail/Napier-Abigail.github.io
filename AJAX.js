@@ -2,11 +2,9 @@ function getInfo(){
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			alert(this.responseText);
 			let responseJSON = JSON.parse(this.responseText);
-			alert(responseJSON);
-			let name = responseJSON.results.name;
-			let about = responseJSON.results.description;
+			let name = responseJSON.data.results.name;
+			let about = responseJSON.data.results.description;
 			let outputArea = document.getElementById("output");
 			outputArea.innerHTML="";
 			let htmlName = document.createElement("H4");
