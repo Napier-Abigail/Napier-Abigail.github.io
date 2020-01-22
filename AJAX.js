@@ -30,6 +30,7 @@ function getInfo(){
 		break;
 		case "thor":
 		url+="1009664?apikey="+apiKey;
+		break;
 		case "hulk":
 		url+="1009664?apikey="+apiKey;
 		break;
