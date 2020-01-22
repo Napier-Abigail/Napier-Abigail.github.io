@@ -5,7 +5,8 @@ function getInfo(){
 			let responseJSON = JSON.parse(this.responseText);
 			let name = responseJSON.data.results[0].name;
 			let about = responseJSON.data.results[0].description;
-			let image = responseJSON.data.results[0].thumbnail.path+"portrait_uncanny."+responseJSON.data.results[0].thumbnail.extension;
+			let image = responseJSON.data.results[0].thumbnail.path+"/portrait_uncanny."+responseJSON.data.results[0].thumbnail.extension;
+			image = image.replace("http", "https");
 			let outputArea = document.getElementById("output");
 			outputArea.innerHTML="";
 			let htmlName = document.createElement("H4");
