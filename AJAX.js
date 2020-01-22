@@ -7,7 +7,7 @@ function getInfo(){
 			let about = responseJSON.data.results[0].description;
 			let image = responseJSON.data.results[0].thumbnail.path+"/portrait_uncanny."+responseJSON.data.results[0].thumbnail.extension;
 			image = image.replace("http", "https");
-			let outputArea = document.getElementById("output");
+			let outputArea = document.getElementById("heroOutput");
 			outputArea.innerHTML="";
 			let htmlName = document.createElement("H4");
 			htmlName.innerHTML=name;
