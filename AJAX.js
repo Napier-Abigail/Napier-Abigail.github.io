@@ -28,6 +28,8 @@ function getInfo(){
 		case "ironman":
 		url+="1009368?apikey="+apiKey;
 		break;
+		case "thor":
+		url+="1009664?apikey="+apiKey;
 		case "hulk":
 		url+="1009664?apikey="+apiKey;
 		break;
