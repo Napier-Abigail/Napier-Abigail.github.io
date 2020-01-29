@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JSON and Local Storage Fluency</title>
+	<script src="json-local-storage.js"></script>
+	<link rel="stylesheet" type="text/css" href="fluencyStyle.css">
+	<style>
+	</style>
+</head>
+<body>
+	<header>
+		<h1>JSON and Local Storage Fluency</h1>
+		<button onclick="location.href = 'index.html';">Back To Topics</button>
+	</header>
+	<main>
+		<section>
+			<h2>Meme Generator</h2>
+			<select id="template">
+				<option value="distractedBoyfriend">Distracted Boyfriend</option>
+				<option value="oneDoesNotSimply">One Does Not Simply</option>
+				<option value="drakeHotlineBling">Drake Hotline Bling</option>
+				<option value="womanYellingCat">Woman Yelling at Cat</option>
+				<option value="condescendingWonka">Condescending Willy Wonka</option>
+			</select>
+			First line of text:
+			<input type="text" id="text0">
+			<br>
+			Second line of text:
+			<input type="text" id="text1">
+			<input type="button" value="Generate Meme" onclick="getMeme()">
+		</section>
+		<section>
+			<h2>Memes Generated</h2>
+			<div id="memeOutput"></div>
+			<button onclick="clearStorage()">Clear Memes</button>
+		</section>
+	</main>
+	<script>
+		outputMemes();
+	</script>
+</body>
+</html>
