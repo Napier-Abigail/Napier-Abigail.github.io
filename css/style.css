@@ -38,7 +38,7 @@ button:hover{
 header{
 	padding: 0;
 	margin:0;
-	background-image: url(color.jpg);
+	background-image: url("../images/color.jpg");
 	background-position: center;
 	background-size: cover;
 	height: 700px;
