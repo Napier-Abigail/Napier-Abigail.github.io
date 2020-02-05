@@ -4,10 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Changing CSS Properties with JavaScript</title>
-	<script src="AJAX.js"></script>
+	<script src="./js/css-manip.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/fluencyStyle.css">
 	<style>
+		#lightOutput{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
 
+		.light{
+			padding: 10px;
+		}
 	</style>
 </head>
 <body>
@@ -16,7 +24,16 @@
 		<button onclick="location.href = 'index.html';">Back To Topics</button>
 	</header>
 	<section>
-		<h2>Making Shapes</h2>
+		<h2>Light it up.</h2>
+		Select light type: 
+		<select id="lightType">
+			<option value="normal">Light Bulb</option>
+			<option value="xmas">Christmas Lights</option>
+		</select>
+		<br>
+		<input type="button" value="Make Light" onclick="addLight()">
+		<div id="lightOutput"></div>
 	</section>
+
 </body>
 </html>
