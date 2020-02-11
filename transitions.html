@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<title>CSS Transitions Fluency</title>
+	<link rel="stylesheet" type="text/css" href="./css/fluencyStyle.css">
+	<style>
+		.size, .color, .border{
+			background-color: black;
+			color:white;
+			width: 250px;
+			padding:5px;
+			margin:auto;
+			margin-top:5px;
+		}
+		.size:nth-of-type(2){
+			transition: width 3s ease, font-size 3s ease;
+		}
+		.size:nth-of-type(3){
+			transition: width 3s linear, font-size 3s linear;
+		}
+		.size:nth-of-type(4){
+			transition: width 3s ease-in, font-size 3s ease-in;
+		}
+		.size:nth-of-type(5){
+			transition: width 3s ease-out, font-size 3s ease-out;
+		}
+		.size:nth-of-type(6){
+			transition: width 3s ease-in-out, font-size 3s ease-in-out;
+		}
+
+		.size:hover{
+			width: 375px;
+			font-size: 25px;
+		}
+
+		.color:nth-of-type(2){
+			transition: background-color 5s ease, color 5s ease;
+		}
+		.color:nth-of-type(3){
+			transition: background-color 5s linear, color 5s linear;
+		}
+		.color:nth-of-type(4){
+			transition: background-color 5s ease-in, color 5s ease-in;
+		}
+		.color:nth-of-type(5){
+			transition: background-color 5s ease-out, color 5s ease-out;
+		}
+		.color:nth-of-type(6){
+			transition: background-color 5s ease-in-out, color 5s ease-in-out;
+		}
+
+		.color:hover{
+			background-color: pink;
+			color: red;
+		}
+
+		.border:nth-of-type(2){
+			transition: border-radius 4s ease;
+		}
+		.border:nth-of-type(3){
+			transition: border-radius 4s linear;
+		}
+		.border:nth-of-type(4){
+			transition: border-radius 4s ease-in;
+		}
+		.border:nth-of-type(5){
+			transition: border-radius 4s ease-out;
+		}
+		.border:nth-of-type(6){
+			transition: border-radius 4s ease-in-out;
+		}
+
+		.border:hover{
+			border-radius: 20px;
+		}
+		p{
+			width: 60%;
+			margin:auto;
+			margin-top: 5px;
+			margin-bottom:5px;
+		}
+		p span{
+			font-weight: bold;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>CSS Transitions</h1>
+		<button onclick="location.href = 'index.html';">Back To Topics</button>
+	</header>
+	<p><span>transition:</span> &lt;property&gt; &lt;duration&gt; &lt;timing&gt; &lt;delay&gt;</p>
+	<p><span>property</span> = which css value are you wanting to place the transition on</p>
+	<p><span>duration</span> = how long you want it to take for the transition to complete</p>
+	<p><span>timing</span> = type of timing for transition (ease, linear, ease-in, ease-out, ease-in-out)</p>
+	<p><span>delay</span> = wait this long before starting transition</p>
+	<p><span>ease</span> = fast - slow - fast</p>
+	<p><span>linear</span> = constant</p>
+	<p><span>ease-in</span> = slow-fast</p>
+	<p><span>ease-out</span> = fast-slow</p>
+	<p><span>ease-in-out</span> = slow-fast-slow</p>
+
+	<section>
+		<h2>Width</h2>
+		<div class="size">None</div>
+		<div class="size">Ease</div>
+		<div class="size">Linear</div>
+		<div class="size">Ease-In</div>
+		<div class="size">Ease-Out</div>
+		<div class="size">Ease-In-Out</div>
+	</section>
+	<section>
+		<h2>Color</h2>
+		<div class="color">None</div>
+		<div class="color">Ease</div>
+		<div class="color">Linear</div>
+		<div class="color">Ease-In</div>
+		<div class="color">Ease-Out</div>
+		<div class="color">Ease-In-Out</div>
+	</section>
+	<section>
+		<h2>Border</h2>
+		<div class="border">None</div>
+		<div class="border">Ease</div>
+		<div class="border">Linear</div>
+		<div class="border">Ease-In</div>
+		<div class="border">Ease-Out</div>
+		<div class="border">Ease-In-Out</div>
+	</section>
+</body>
+</html>
