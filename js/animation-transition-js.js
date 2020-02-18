@@ -5,7 +5,9 @@ function setEvents(){
 	zin.addEventListener("click", zoomIn);
 	zin.addEventListener("mouseover", displayZoomIn);
 	zin.addEventListener("mouseout", displayZoomIn);
-	zin.addEventListener("ontouchstart", displayZoomIn);
+	zin.addEventListener("ontouchstart", function{
+		alert("hi");
+	});
 	zin.addEventListener("ontouchend", displayZoomOut);
 	zout.addEventListener("click", zoomOut);
 	zout.addEventListener("mouseover", displayZoomOut);
