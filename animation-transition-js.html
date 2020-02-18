@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+	<title>Animations and Transitions with JS Fluency</title>
+	<link rel="stylesheet" type="text/css" href="./css/fluencyStyle.css">
+	<style>
+		section{
+			display: block;
+			margin: auto;
+		}
+		section img{
+			max-width: 100%;
+			margin:auto;
+		}
+		section button{
+			background-color: black;
+			color: white;
+			font-size: 20px;
+			margin:0;
+			padding: 10px;
+			cursor: pointer;
+		}
+		.hide{
+			visibility: hidden;
+		}
+		p{
+			margin:0;
+			padding: 0;
+		}
+		div {
+			margin:auto;
+			width: 150px;
+			height:150px;
+			background-color: black;
+			animation-name: test;
+			animation-duration: 6s;
+			margin-top: 5px;
+		}
+
+		@keyframes test {
+			from {
+				background-color: black;
+				border-radius: 0;
+			}
+			to{
+				background-color: purple;
+				border-radius: 100px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Animations and Transitions with JS Events</h1>
+		<button onclick="location.href = 'index.html';">Back To Topics</button>
+	</header>
+	<section>
+		<h2>Zoom</h2>
+		<img src="images/painting.jpg" alt="students painting">
+		<p class="hide">Zoom picture in.</p>
+		<p class="hide">Zoom picture out.</p>
+		<button>+</button>
+		<button>-</button>
+	</section>
+	<script src="js/animation-transition-js.js"></script>
+</body>
+</html>
