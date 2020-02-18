@@ -11,7 +11,7 @@ function setEvents(){
 	let img = document.querySelector("img");
 	img.style.width = "400px";
 	let mobileDiv = document.querySelector("div");
-	mobileDiv.addEventListener("ontouchstart", function(){alert(working)})
+	mobileDiv.addEventListener("ontouchstart", function(){alert("working")})
 }
 
 function zoomIn(){
