@@ -11,8 +11,14 @@ function setEvents(){
 	let img = document.querySelector("img");
 	img.style.width = "400px";
 	let mobileDiv = document.querySelector("div");
-	mobileDiv.addEventListener("ontouchstart", function(){
+	mobileDiv.addEventListener("touchstart", function(){
 		mobileDiv.style.backgroundColor = "red";
+	})
+	mobileDiv.addEventListener("touchend", function(){
+		mobileDiv.style.backgroundColor = "purple";
+	})
+	mobileDiv.addEventListener("touchmove", function(){
+		mobileDiv.style.transform = "scale(.5)";
 	})
 }
 
