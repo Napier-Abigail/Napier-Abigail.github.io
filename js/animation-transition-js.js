@@ -5,9 +5,7 @@ function setEvents(){
 	zin.addEventListener("click", zoomIn);
 	zin.addEventListener("mouseover", displayZoomIn);
 	zin.addEventListener("mouseout", displayZoomIn);
-	zin.addEventListener("ontouchstart", function{
-		alert("hi");
-	});
+	zin.addEventListener("ontouchstart", test);
 	zin.addEventListener("ontouchend", displayZoomOut);
 	zout.addEventListener("click", zoomOut);
 	zout.addEventListener("mouseover", displayZoomOut);
@@ -42,6 +40,10 @@ function displayZoomIn(){
 function displayZoomOut(){
 	let label = document.querySelectorAll("p")[1];
 	label.classList.toggle("hide");
+}
+
+function test(){
+	alert("hi");
 }
 
 
