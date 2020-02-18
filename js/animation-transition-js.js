@@ -4,13 +4,16 @@ function setEvents(){
 	let zout = buttons[2];
 	zin.addEventListener("click", zoomIn);
 	zin.addEventListener("mouseover", displayZoomIn);
-	zin.addEventListener("mouseout", displayZoomIn)
+	zin.addEventListener("mouseout", displayZoomIn);
+	zin.addEventListener("ontouchstart", displayZoomIn);
+	zin.addEventListener("ontouchend", displayZoomOut);
 	zout.addEventListener("click", zoomOut);
 	zout.addEventListener("mouseover", displayZoomOut);
 	zout.addEventListener("mouseout", displayZoomOut);
+	zout.addEventListener("ontouchstart", displayZoomOut);
+	zout.addEventListener("ontouchend", displayZoomOut);
 	let img = document.querySelector("img");
 	img.style.width = "400px";
-	img.addEventListener("ontouchstart", touchZoom)
 }
 
 function zoomIn(){
@@ -39,16 +42,5 @@ function displayZoomOut(){
 	label.classList.toggle("hide");
 }
 
-function touchZoom(){
-	alert("touch");
-}
-
-function touchZoomIn(){
-
-}
-
-function touchZoomOut(){
-
-}
 
 setEvents();
