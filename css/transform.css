@@ -1,0 +1,41 @@
+section div{
+	background-color: black;
+	color:white;
+	width: 150px;
+	height: 150px;
+	margin: auto;
+}
+
+.translate div{
+	transform: translate(60px, 30px);
+}
+.rotate div{
+	transform: rotate(160deg);
+}
+
+.scale-x div{
+	transform: scaleX(4);
+}
+
+.scale-y div{
+	transform: scaleY(1.25);
+}
+.scale div{
+	transform: scale(0.5);
+}
+
+.skew-x div{
+	transform: skewX(40deg);
+}
+
+.skew-y div{
+	transform: skewY(-30deg);
+}
+
+.skew div{
+	transform: skew(20deg, 40deg); /*skew(x-skew, y-skew)*/
+}
+
+.matrix div{
+	transform: matrix(1.5, -0.1, 0.5, .5, 50, 10); /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
+}

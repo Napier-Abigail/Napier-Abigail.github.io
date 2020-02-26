@@ -1,0 +1,46 @@
+section div{
+	margin: auto;
+}
+
+.rotate div{
+	width: 150px;
+	height: 150px;
+	background-color: black;
+	animation-name: rotateColor;
+	animation-duration: 6s;
+	transform-origin: center;
+}
+
+@keyframes rotateColor {
+	from {
+		background-color: black;
+		border-radius: 0;
+		transform: translateX(0) rotate(0);
+	}
+	to {
+		background-color: yellow;
+		border-radius: 100px;
+		transform: translateX(200px) rotate(180deg);
+	}
+}
+
+.bounce div{
+	width: 80px;
+	height: 80px;
+	background-color: red;
+	border-radius: 50px;
+	animation-name: bounce;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: linear;
+}
+
+@keyframes bounce {
+	from{
+		transform: translateX(0) translateY(0);
+	}
+	to{
+		transform: translateY(100px)
+	}
+}
