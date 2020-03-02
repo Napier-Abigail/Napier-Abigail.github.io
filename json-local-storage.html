@@ -16,6 +16,12 @@
 	</header>
 	<main>
 		<section>
+			<h2>Class List</h2>
+			Name: <input type="text" id="Name">
+			<input type="button" value="Update List" onclick="updateClassList()">
+			<div id="classListOut"></div>
+		</section>
+		<section>
 			<h2>Meme Generator</h2>
 			<select id="template">
 				<option value="distractedBoyfriend">Distracted Boyfriend</option>
@@ -36,6 +42,7 @@
 			<div id="memeOutput"></div>
 			<button onclick="clearStorage()">Clear Memes</button>
 		</section>
+
 	</main>
 	<script>
 		outputMemes();

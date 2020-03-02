@@ -74,3 +74,26 @@ function clearStorage(){
 	localStorage.clear();
 	document.getElementById("memeOutput").innerHTML = "No memes created yet.";
 }
+
+function updateClassList(){
+	let studentName = "";
+	let students =[]
+	if(sessionStorage.length == 0){
+		studentName = document.getElementById("Name").value;
+		if (studentName == ""){
+			return;
+		}
+		students = [studentName];
+	}else{
+		students = sessionStorage["students"].split(",");
+		studentName = document.getElementById("Name").value;
+		students.push(studentName);
+	}
+	strStudents = students.toString()
+	sessionStorage.setItem('students', strStudents);
+	displayClass();
+}
+
+function displayClass(){
+	document.getElementById("classListOut").innerHTML = sessionStorage["students"];
+}
