@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+body{
+	background-color: #fafffd;
+	font-family: 'Comfortaa', sans-serif;
+	color: #2c4251;
+	margin: 0;
+}
+
+header{
+
+	display: flex;
+	align-content: center;
+	padding: 15px;
+	background-color: #fafffd;
+}
+
+.logo{
+	width: 20%;
+}
+.logo img{
+	max-width: 100%;
+}
+nav{
+	text-align: right;
+	width: 70%;
+}
+header button{
+	width: 10%;
+	margin: 10px 10px;
+	background-color: #b6c649;
+	color: #fafffd;
+	border: none;
+	border-radius: 10px;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 15px;
+	transition: all 0.3s ease-in-out;
+}
+
+header button:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	background-color: #d16666; 
+}
+
+header button:active{
+	transform: scale(0.8);
+}
+
+nav ul{
+	padding:0;
+}
+nav ul li{
+	display: inline-block;
+	padding-right: 15px;
+
+}
+ul a{
+	text-decoration: none;
+	color: #2c4251;
+	position: relative;
+
+}
+/* make an element before each li, but make it invisable, and since the li is realative, 
+make this object absolute, so it is at the bottom of the li*/
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d16666;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+/* show it and grow it when we hover*/
+nav ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+footer{
+	background-color: #d16666;
+	text-align: center;
+	padding: 15px;
+	color: #fafffd;
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+28% { left: 0%; }
+33% { left: -100%; }
+61% { left: -100%; }
+66% { left: -200%; }
+95% { left: -200%; }
+100% { left: 0%; }
+}
+
+body figure{ 
+  margin: 0; 
+  background-color: #101010;
+}
+div.images-slide { 
+  width: 100%; 
+  overflow: hidden; 
+}
+figure.slider { 
+  position: relative; 
+  width: 500%;
+  font-size: 0; 
+  animation: 20s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; 
+  height: auto;
+  display: inline-block;  
+  position: inherit; 
+}
+figure.slider img { 
+	width: 100%; 
+	height: auto;
+}
+figure.slider figure figcaption { 
+  position: absolute;
+  bottom: 0;
+  background:
+  rgba(0,0,0,0.4);
+  color: #fff;
+  width: 100%;
+  font-size: 2rem;
+  padding: .6rem; 
+}
+
+.splash{
+	position: relative;
+	z-index: -1;
+}
+
+.overlay{
+	background-color: rgba(182, 198, 73, 0.5);
+	padding: 20px;
+	position: absolute;
+	top: -6px;
+	left: -80px;
+	transform: rotate(-20deg);
+	height: 110%;
+	width: 30%;
+	text-align: right;
+}
+.overlay p{
+	position: absolute;
+	transform: rotate(20deg);
+	text-align: left;
+	width: 50%;
+	right: 15px;
+	bottom: 40px;
+}
+
