@@ -34,14 +34,16 @@
 			<img src="images/logo.png" alt="photoway logo">
 		</div>
 		<nav>
-			<ul>
+			<button id="menuButton" onclick="toggleMenu()"><span id="hamburger">&#9776;</span><span id="close" class="hide">&#10005;</span> <span id="menuLabel"></span></button>
+			<ul id="primaryNav" class="hide">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Manage Photos</a></li>
 				<li><a href="#">Print Photos</a></li>
+				<li><button>Login</button></li>
 			</ul>
+			
 		</nav>
-		<button>Login</button>
 	</header>
 	<main>
 		<div class="splash">
@@ -59,12 +61,24 @@
 				</figure>
 			</div>
 			<div class="overlay">
-				<p>A picture is worth a thousand words, but our pictures say more.</p>
+				<p>Our pictures say more.</p>
 			</div>
 		</div>
+		<section>
+			<h1>Photoway:</h1>
+			<h2>We help you say more with what you take.</h2>
+			<div class="platforms">
+				<img src="images/googleDrive.png" alt="google drive icon">
+				<img src="images/facebook.png" alt="facebook icon">
+				<img src="images/instagram.png" alt="instagram icon">
+			</div>
+			<p>Here at Photoway we thrive on the creative, the unique, and the everyday. We love life. You love life. That's why you capture it. But after it's captured, what do you do with it? Photoway provides an easy way to link up with your various social and storage accounts accross the web, and easily create prints, photobooks, and more.</p>
+			<p>A picture may be worth a thousand words, but we promise ours will say so many more than that.</p>
+		</section>
 	</main>
 	<footer>
 		<p>&copy; Photoway | Designed by Abi Napier</p>
 	</footer>
+	<script src="js/menu.js"></script>
 </body>
 </html> 
