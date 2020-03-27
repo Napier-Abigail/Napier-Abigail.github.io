@@ -1,0 +1,30 @@
+@media only screen and (min-width: 800px) {
+	nav ul, nav ul.hide{
+		display: inline-block;
+	}
+
+	nav ul li{
+		display: inline-block;
+		padding-right: 10px;
+	}
+
+	nav button #hamburger.hide, nav button #hamburger, nav button #close, nav button #close.hide{display:none;}
+	.overlay{
+	  	top: -30px;
+	  	left: -200px;
+	}
+	.overlay p{
+		bottom:160px;
+	}
+	#main{
+		background-color: white;
+	}
+	#main section{
+		max-width: 850px;
+		margin:auto;
+	}
+	.logo{
+		width: 20%;
+	}
+
+}

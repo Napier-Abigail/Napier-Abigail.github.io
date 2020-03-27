@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>TaskDo Homepage</title>
+	<title>TaskDo Timer</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="The easy way to stay on task.">
+	<meta name="description" content="Easy to use timer for keeping on task.">
 	<link rel="stylesheet" type="text/css" href="css/small.css">
 	<link rel="stylesheet" type="text/css" href="css/medium.css">
 	<link rel="stylesheet" type="text/css" href="css/large.css">
@@ -38,25 +38,29 @@
 		<nav>
 			<button id="menuButton" onclick="toggleMenu()"><span id="hamburger">&#9776;</span><span id="close" class="hide">&#10005;</span> <span id="menuLabel"></span></button>
 			<ul id="primaryNav" class="hide">
-				<li><a href="#">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="tasks.html">Tasks</a></li>
-				<li><a href="timer.html">Timer</a></li>
+				<li><a href="#">Timer</a></li>
 			</ul>
 			
 		</nav>
 	</header>
 	<main>
-		<h1>Get it Done!</h1>
-		<h2>manage your day</h2>
+		<h1>Timer:</h1>
 		<section>
-			<h3>Current Weather: </h3>
-			Zip Code: <input id="zip" name="zip" type="text" pattern="[0-9]*">
-			<input type="button" name="getWeather" value="Get Weather">
+			<h3>Pomodoro Timer:</h3>
+			<div id="timerDisplay">00:00</div>
+			<div>
+				<button onclick="timer(25)">Work Time (25 min)</button>
+				<button onclick="timer(5)">Short Break (5 min)</button>
+				<button onclick="timer(15)">Long Break (15 min)</button>
+			</div>
 		</section>
 	</main>
 	<footer>
-		<p>&copy; TaskDo| Photo by <span id="artist"></span> on <a href="#">Unsplash</a>| Designed by Abi Napier</p>
+		<p>&copy; TaskDo| Photo by <span id="artist"></span> on <a id="photoURL" href="#" target="_blank">Unsplash</a>| Designed by Abi Napier</p>
 	</footer>
+	<audio id="alert" src="alert.mp3"></audio>
 	<script src="js/menu.js"></script>
 </body>
 </html> 

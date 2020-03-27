@@ -1,0 +1,14 @@
+@media only screen and (min-width: 450px) {
+  .overlay{
+  	top: -30px;
+  	left: -100px;
+  }
+  .overlay p{
+  	bottom: 80px;
+  	font-size: 140%;
+  }
+
+  .platforms img{
+  	width: 60%;
+  }
+}

@@ -7,9 +7,12 @@
 body{
 	background-color: #fafffd;
 	font-family: 'Comfortaa', sans-serif;
-	color: #2c4251;
+	color: black;
 	margin: 0;
+	text-align: center;
 }
+
+
 
 header{
 
@@ -56,26 +59,7 @@ nav ul.hide, nav button #hamburger.hide, nav button #close.hide{display:none;}
 	cursor: pointer;
 	color: #d16666;
 }
-nav ul button{
-	background-color: #b6c649;
-	color: #fafffd;
-	border: none;
-	border-radius: 8px;
-	padding: 3px 8px;
-	font-family: 'Comfortaa', sans-serif;
-	font-size: 15px;
-	transition: all 0.3s ease-in-out;
-}
 
-nav ul button:hover{
-	cursor: pointer;
-	transform: scale(1.2);
-	background-color: #d16666; 
-}
-
-nav ul button:active{
-	transform: scale(0.8);
-}
 
 nav ul{
 	padding:0;
@@ -116,103 +100,66 @@ nav ul li a:hover:before {
 
 footer{
 	background-color: #d16666;
-	text-align: center;
 	padding: 15px;
 	color: #fafffd;
 }
 
-@keyframes slidy {
-0% { left: 0%; }
-28% { left: 0%; }
-33% { left: -100%; }
-61% { left: -100%; }
-66% { left: -200%; }
-95% { left: -200%; }
-100% { left: 0%; }
+footer a{
+	color: black;
 }
 
-body figure{ 
-  margin: 0; 
-  background-color: #101010;
-}
-div.images-slide { 
-  width: 100%; 
-  overflow: hidden; 
-}
-figure.slider { 
-  position: relative; 
-  width: 500%;
-  font-size: 0; 
-  animation: 20s slidy infinite; 
-}
-figure.slider figure { 
-  width: 20%; 
-  height: auto;
-  display: inline-block;  
-  position: inherit; 
-}
-figure.slider img { 
-	width: 100%; 
-	height: auto;
-}
-figure.slider figure figcaption { 
-  position: absolute;
-  bottom: 0;
-  background:
-  rgba(0,0,0,0.4);
-  color: #fff;
-  width: 100%;
-  font-size: 2rem;
-  padding: .6rem; 
-}
-
-.splash{
-	position: relative;
-	z-index: -1;
-}
-
-.overlay{
-	background-color: rgba(182, 198, 73, 0.5);
-	padding: 20px;
-	position: absolute;
-	top: -15px;
-	left: -70px;
-	transform: rotate(-20deg);
-	height: 150%;
-	width: 50%;
-	text-align: right;
-}
-.overlay p{
-	position: absolute;
-	transform: rotate(20deg);
-	text-align: left;
-	width: 50%;
-	right: 5px;
-	bottom: 40px;
-}
 
 main section{
-	background-color: white;
 	padding: 15px;
+	background-color: white;
+	width: 45%;
+	margin:auto;
 }
 
 h1{
 	margin: 0;
 	padding-top: 10px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
 }
 h2{
+	color: white;
 	font-size: 110%;
 	font-weight: normal;
 	font-style: italic;
 	margin-top: 0;
+	text-shadow: 1px 1px 5px black;
 }
 
-main section p{
-	line-height: 1.5;
+main{
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	height: 800px;
 }
 
-main .platforms{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 15px;
+button, input[type="button"]{
+	background-color: #d16666;
+	color: white;
+	font-family: "Comfortaa", serif;
+	padding: 10px 5px;
+	border: none;
+	transition: all .5s ease-in-out;
 }
+
+button:hover, input[type="button"]:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#timerDisplay{
+	font-size: 280%;
+}
+
+input[type="text"]{
+	font-size: 120%;
+	border-style: none;
+	border-bottom: solid black 2px;
+}
+
+
