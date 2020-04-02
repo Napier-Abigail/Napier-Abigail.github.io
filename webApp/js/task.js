@@ -59,7 +59,10 @@ function removeItem(e){
       myItems.splice(i, 1);
     }
   }
-  localStorage.setItem("tasks", myItems.toString());
+  if(myItems.length==0){
+    loacalStorage.removeItem("tasks");
+  }else{localStorage.setItem("tasks", myItems.toString());}
+  
 }
 
 updateTaskList();
