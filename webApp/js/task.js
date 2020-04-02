@@ -37,6 +37,14 @@ function updateTaskList(){
       taskSection.insertBefore(newCircle, insertPoint);
       taskSection.insertBefore(newTask, insertPoint);
     }
+  }else{
+    let taskSection = document.getElementById("tasks");
+    if(taskSection.children.length>2){
+      let toDelete = taskSection.children.length-2;
+      for(let j=0; j<toDelete; j++){
+        taskSection.removeChild(taskSection.children[0]);
+      }
+    }
   }
 }
 
