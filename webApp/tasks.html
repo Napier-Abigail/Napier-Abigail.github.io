@@ -8,26 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/small.css">
 	<link rel="stylesheet" type="text/css" href="css/medium.css">
 	<link rel="stylesheet" type="text/css" href="css/large.css">
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="images/favicon/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128" />
-	<meta name="application-name" content="&nbsp;"/>
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="images/favicon/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="images/favicon/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="images/favicon/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="images/favicon/mstile-310x310.png" />
+	<link rel="icon" href="favicon.ico">
 
 </head>
 <body>
@@ -49,11 +30,11 @@
 		<h1>Tasks:</h1>
 		<section>
 			<h3>Enter the tasks you have to do today:</h3>
-			<div>
-				<svg height="18" width="18">
+			<div id="tasks">
+				<svg height="18" width="18" class="circle" onclick="removeItem(event)">
 					<circle cx="8" cy="8" r="7" stroke="black" fill="white" stroke-width="2"/>
 				</svg> 
-				<input type="text" name="taskInput">
+				<input type="text" name="taskInput" id="taskInput">
 			</div>
 		</section>
 	</main>
@@ -61,5 +42,6 @@
 		<p>&copy; TaskDo| Photo by <span id="artist"></span> on <a id="photoURL" href="#" target="_blank">Unsplash</a>| Designed by Abi Napier</p>
 	</footer>
 	<script src="js/menu.js"></script>
+	<script src="js/task.js"></script>
 </body>
 </html> 
