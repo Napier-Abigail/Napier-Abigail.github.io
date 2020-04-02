@@ -68,7 +68,7 @@ function removeItem(e){
     }
   }
   if(myItems.length==0){
-    loacalStorage.removeItem("tasks");
+    localStorage.removeItem("tasks");
   }else{localStorage.setItem("tasks", myItems.toString());}
   
 }
