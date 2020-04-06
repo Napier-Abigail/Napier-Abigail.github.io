@@ -28,6 +28,7 @@ function timer(min){
         document.getElementById('timerDisplay').textContent =pad(Math.floor(sec/60))+':'+pad(sec%60);
         sec--;
         if(sec <0){
+        	clearInterval(timer);
         	document.getElementById('timerDisplay').textContent = "00:00";
         	return;
         }
