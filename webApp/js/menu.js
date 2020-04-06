@@ -27,6 +27,10 @@ function timer(min){
     var timer = setInterval(function(){
         document.getElementById('timerDisplay').textContent =pad(Math.floor(sec/60))+':'+pad(sec%60);
         sec--;
+        if(sec <0){
+        	document.getElementById('timerDisplay').textContent = "00:00";
+        	return;
+        }
         if (sec == 0){
         	document.getElementById('alert').play();
         }
