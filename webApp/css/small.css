@@ -25,6 +25,16 @@ header{
 .logo{
 	width: 30%;
 	padding-top: 5px;
+	animation: slide-in ease-in-out 1s;
+}
+
+@keyframes slide-in{
+	from{
+		margin-left: -500px;
+	}
+	to{
+		margin-left: 0;
+	}
 }
 img{
 	max-width: 100%;
