@@ -11,4 +11,8 @@
   .platforms img{
   	width: 60%;
   }
+
+  main{
+    min-height: 800px;
+  }
 }
